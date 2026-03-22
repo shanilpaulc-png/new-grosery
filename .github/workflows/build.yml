@@ -35,7 +35,7 @@ jobs:
       - name: Copy app source files into project
         run: |
           cp lib/main.dart shoptrack_build/lib/main.dart
-          cp pubspec.yaml shoptrack_build/lib/pubspec.yaml
+          cp lib/pubspec.yaml shoptrack_build/pubspec.yaml
 
       - name: Install dependencies
         working-directory: shoptrack_build
