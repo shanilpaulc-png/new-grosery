@@ -29,6 +29,9 @@ jobs:
       - name: Create Flutter project scaffold
         run: flutter create --project-name shoptrack shoptrack_build
 
+      - name: Unzip source files
+        run : unzip lib.zip
+
       - name: Copy app source files into project
         run: |
           cp lib/main.dart shoptrack_build/lib/main.dart
